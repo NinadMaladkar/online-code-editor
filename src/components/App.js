@@ -35,7 +35,6 @@ function App() {
           value={css}
           onChange={setCss}
         />
-        {document.get}
         <Editor
           language='javascript'
           displayName='JavaScript'
