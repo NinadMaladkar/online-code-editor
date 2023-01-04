@@ -7,8 +7,11 @@ import 'codemirror/mode/javascript/javascript';
 import 'codemirror/mode/css/css';
 
 import { Controlled as ControlledEditor } from 'react-codemirror2';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCompressAlt, faExpandAlt } from '@fortawesome/free-solid-svg-icons';
+
+import {
+  TbLayoutSidebarLeftCollapse,
+  TbLayoutSidebarRightCollapse,
+} from 'react-icons/tb';
 
 const Editor = ({ language, displayName, value, onChange }) => {
   const [open, setOpen] = useState(true);
@@ -24,8 +27,11 @@ const Editor = ({ language, displayName, value, onChange }) => {
           type='button'
           className='expand-collapse-btn'
           onClick={() => setOpen((prevOpen) => !prevOpen)}>
-          {' '}
-          <FontAwesomeIcon icon={open ? faCompressAlt : faExpandAlt} />{' '}
+          {open ? (
+            <TbLayoutSidebarLeftCollapse size='20px' />
+          ) : (
+            <TbLayoutSidebarRightCollapse size='20px' />
+          )}
         </button>
       </div>
       <ControlledEditor
