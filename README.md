@@ -1,6 +1,9 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web app lets you write and compile HTML, CSS and JavaScript on the go totally online. It works similar to CodePen. 
+Your progress is saved automatically in local storage so you can access it later on as well, all without logging in to the application.
+
+This project is deployed on Netlify -  [Online Code editor](https://online-codepen.netlify.app/).
 
 ## Available Scripts
 
